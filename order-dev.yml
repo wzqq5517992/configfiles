@@ -10,4 +10,4 @@ spring:
     show-sql: true  
 env: dev
 girl:
-  name: 1000
+  name: 520000
