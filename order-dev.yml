@@ -6,6 +6,11 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://47.93.37.94:33306/sell?characterEncoding=utf-8&useSSL=false
+  rabbitmq:    #rabbitMQ消息队列配置
+    host: 39.105.162.160
+    port: 5672
+    username: guest
+    password: guest  
   jpa:
     show-sql: true  
 env: dev
