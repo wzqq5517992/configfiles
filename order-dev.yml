@@ -10,4 +10,4 @@ spring:
     show-sql: true  
 env: dev
 girl:
-  name: 34342地方的规定发放
+  name: 35
