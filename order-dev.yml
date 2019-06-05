@@ -10,4 +10,4 @@ spring:
     show-sql: true  
 env: dev
 girl:
-  name: wzq123456
+  name: wzq1
