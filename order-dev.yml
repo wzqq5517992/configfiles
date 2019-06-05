@@ -10,4 +10,4 @@ spring:
     show-sql: true  
 env: dev
 girl:
-  name: qwert
+  name: 阿斯蒂芬
