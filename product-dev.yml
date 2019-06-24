@@ -11,4 +11,7 @@ spring:
     password: guest   
   jpa:
     show-sql: true
+  redis:
+    host: 47.93.37.94
+    port: 6379  
 env: dev    
