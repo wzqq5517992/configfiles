@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: user
   rabbitmq:    #rabbitMQ消息队列配置
     host: 39.105.162.160
     port: 5672
