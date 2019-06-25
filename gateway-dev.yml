@@ -1,0 +1,25 @@
+zuul:
+  retryable: true
+  routes:
+    myProduct:
+      #myProduct/product/list路由到product/list
+      path: /myProduct/**   #将serviceId服务访问路径前缀改为myProduct
+      serviceId: product
+      sensitiveHeaders: #可对cookie的值是否过滤进行设置
+      #简洁写法`
+#    product: /myProduct/**
+  ignored-patterns:
+    - /**/product/listForOrder  #拦截listForOrder接口不可暴露给外界
+
+ribbon:
+    ConnectTimeout: 250 # 连接超时时间(ms)
+    ReadTimeout: 2000 # 通信超时时间(ms)
+    OkToRetryOnAllOperations: true # 是否对所有操作重试
+    MaxAutoRetriesNextServer: 2 # 同一服务不同实例的重试次数
+    MaxAutoRetries: 1 # 同一实例的重试次数
+# 查看所有路由 http://localhost:8088/actuator/routes
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
